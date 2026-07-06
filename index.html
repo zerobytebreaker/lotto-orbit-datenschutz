@@ -3,39 +3,547 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Datenschutzerklaerung - Lotto Orbit</title>
+  <meta name="robots" content="index,follow">
+  <title>Datenschutzerklärung – Lotto Orbit</title>
+
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; max-width: 860px; margin: 0 auto; padding: 32px 20px; color: #182033; background: #f7f9fc; }
-    h1, h2 { color: #081426; }
-    .card { background: #fff; border: 1px solid #d9e1ec; border-radius: 10px; padding: 22px; }
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #182033;
+      --muted: #526074;
+      --heading: #081426;
+      --border: #d9e1ec;
+      --link: #1458a6;
+      --notice-bg: #fff8e6;
+      --notice-border: #d59b18;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px 18px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    main {
+      width: min(920px, 100%);
+      margin: 0 auto;
+      padding: 30px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(8, 20, 38, 0.08);
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--heading);
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: clamp(1.8rem, 4vw, 2.45rem);
+    }
+
+    h2 {
+      margin-top: 2.2rem;
+      font-size: 1.35rem;
+    }
+
+    h3 {
+      margin-top: 1.45rem;
+      font-size: 1.05rem;
+    }
+
+    p,
+    li {
+      max-width: 78ch;
+    }
+
+    ul {
+      padding-left: 1.35rem;
+    }
+
+    a {
+      color: var(--link);
+      overflow-wrap: anywhere;
+    }
+
+    .meta {
+      color: var(--muted);
+    }
+
+    .contact {
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: color-mix(in srgb, var(--card) 92%, var(--bg));
+    }
+
+    code {
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      background: color-mix(in srgb, var(--card) 82%, var(--border));
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1622;
+        --card: #151f2e;
+        --text: #e8edf5;
+        --muted: #aab6c8;
+        --heading: #f4f7fb;
+        --border: #334156;
+        --link: #85b8ff;
+      }
+
+      main {
+        box-shadow: none;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <main class="card">
-    <h1>Datenschutzerklaerung fuer Lotto Orbit</h1>
-    <p><strong>Stand:</strong> 06.07.2026</p>
+  <main>
+    <h1>Datenschutzerklärung für Lotto Orbit</h1>
 
-    <h2>Verantwortlicher Entwickler</h2>
-    <p>Jürgen Bier</p>
-    <p>Kontakt: ueber die im Google-Play-Eintrag hinterlegte Entwickleradresse.</p>
+    <p class="meta">
+      <strong>Stand:</strong> 06.07.2026
+    </p>
 
-    <h2>Welche Daten verarbeitet die App?</h2>
-    <p>Lotto Orbit verarbeitet Favoriten, Einstellungen, generierte Zahlenfelder und lokale Ziehungsdaten direkt auf dem Geraet. Diese Daten dienen ausschliesslich der App-Funktion.</p>
+    <h2>1. Verantwortlicher</h2>
 
-    <h2>Welche Daten werden nicht verarbeitet?</h2>
-    <p>Die App erhebt keine Namen, Adressen, Zahlungsdaten, Kontakte, Standortdaten, Fotos, Nachrichten oder vergleichbare personenbezogene Inhalte. Die App enthaelt keine Werbung, kein Firebase, kein Analytics-SDK und kein Crash-Reporting-SDK.</p>
+    <div class="contact">
+      <p>
+        Jürgen Bier<br>
+        Entwicklername im Google Play Store: J. Bier Software<br>
+        Hedwig-Burgheim-Ring 24<br>
+        35396 Gießen<br>
+        Deutschland
+      </p>
 
-    <h2>Netzwerkzugriffe und Drittanbieter</h2>
-    <p>Die App kann ueber HTTPS aktuelle Ziehungsdaten aus oeffentlich erreichbaren Downloadquellen abrufen. Fuer die Option echter Zufall kann RANDOM.ORG angefragt werden. Dabei sendet die App keine Favoriten, keine generierten Zahlenfelder und keine Nutzerkontodaten. Wie bei jeder HTTPS-Anfrage koennen die angefragten Dienste technisch die IP-Adresse des aufrufenden Anschlusses sehen.</p>
+      <p>
+        E-Mail:
+        <a href="mailto:zerobytebreaker@gmail.com">
+          zerobytebreaker@gmail.com
+        </a>
+      </p>
+    </div>
 
-    <h2>Datenaufbewahrung und Loeschung</h2>
-    <p>Favoriten und Einstellungen bleiben lokal auf dem Geraet gespeichert, bis sie in der App geloescht werden oder die App deinstalliert beziehungsweise die App-Daten geloescht werden. Cloud-Backups sind in der App deaktiviert.</p>
+    <h2>2. Geltungsbereich und Überblick</h2>
 
-    <h2>Keine offizielle Lotterie-App</h2>
-    <p>Lotto Orbit ist keine offizielle App eines Lotterieanbieters, verkauft keine Tippscheine, vermittelt keine Spielteilnahme und nimmt keine Zahlungen entgegen. Generierte Zahlen und statistische Auswertungen stellen keine Gewinnprognose dar.</p>
+    <p>
+      Diese Datenschutzerklärung gilt für die Android-App „Lotto Orbit“ mit
+      der Paketkennung <code>de.bytebreaker.lottoorbit</code> sowie für die
+      über GitHub Pages bereitgestellte Seite dieser Datenschutzerklärung.
+    </p>
 
-    <h2>Hinweis zu verantwortungsvollem Glücksspiel</h2>
-    <p>Glücksspiel kann süchtig machen. Teilnahme an Lotterien ist nur ab 18 Jahren erlaubt.</p>
+    <p>
+      Lotto Orbit kann ohne Benutzerkonto verwendet werden. Die App enthält
+      keine Werbung, keine In-App-Käufe, kein Firebase, keine Analyse- oder
+      Trackingdienste und kein Crash-Reporting-SDK. Der Entwickler betreibt
+      für die App keinen eigenen Backend-Server und erhält keine
+      Nutzungsprofile.
+    </p>
+
+    <h2>3. Lokal auf dem Gerät verarbeitete Daten</h2>
+
+    <p>
+      Die folgenden Daten werden ausschließlich im geschützten App-Speicher
+      des Geräts verarbeitet und grundsätzlich nicht an den Entwickler
+      übermittelt:
+    </p>
+
+    <ul>
+      <li>
+        gespeicherte Favoriten und Zahlenfelder, einschließlich selbst
+        gewählter Bezeichnungen, Haupt- und Zusatzzahlen, Spiel-77-Zahlen,
+        Erstellungszeitpunkt und Zeitpunkt der letzten Verwendung;
+      </li>
+
+      <li>
+        lokale Ziehungsdaten und technische Metadaten zum Aktualisierungsstand;
+      </li>
+
+      <li>
+        App-Einstellungen, insbesondere Design, Darstellungsstil und gewählter
+        Analyseumfang;
+      </li>
+
+      <li>
+        vorübergehende Eingaben und Ergebnisse, etwa Suchbegriffe,
+        Generatorergebnisse und manuell eingegebene Seeds, solange die
+        jeweilige App-Sitzung besteht.
+      </li>
+    </ul>
+
+    <p>
+      Zweck dieser Verarbeitung ist die Bereitstellung der vom Nutzer
+      ausgewählten App-Funktionen. Soweit diese Angaben im Einzelfall
+      personenbezogen sind, beruht die Verarbeitung auf Art. 6 Abs. 1 lit. f
+      DSGVO. Das berechtigte Interesse besteht in der funktionsfähigen,
+      nutzerfreundlichen und lokalen Bereitstellung der App.
+    </p>
+
+    <h2>
+      4. Netzwerkverbindungen und automatische Aktualisierung der Ziehungsdaten
+    </h2>
+
+    <p>
+      Beim Öffnen der App und bei einer manuell ausgelösten Aktualisierung
+      versucht Lotto Orbit, aktuelle und historische Ziehungsdaten über eine
+      verschlüsselte HTTPS-Verbindung abzurufen. Die App verwendet dafür den
+      Informationsdienst von WestLotto:
+    </p>
+
+    <p>
+      <strong>Empfänger:</strong>
+      Westdeutsche Lotterie GmbH &amp; Co. OHG,
+      Weseler Straße 108–112, 48151 Münster<br>
+
+      <strong>Domain:</strong>
+      <code>www.westlotto.de</code><br>
+
+      <strong>Aufgerufener Dienst:</strong>
+      <code>/wlinfo/WL_InfoService</code>
+    </p>
+
+    <p>
+      Bei der Verbindung werden technisch insbesondere die öffentliche
+      IP-Adresse des Internetanschlusses, Datum und Uhrzeit, die angeforderte
+      Adresse einschließlich der Parameter für Lotterieart, Zeitraum und
+      Dateiformat sowie der technische User-Agent
+      <code>LottoOrbit/1.0</code> an WestLotto übertragen.
+      Favoriten, gespeicherte Zahlenfelder, selbst vergebene Namen,
+      Einstellungen und Nutzerkontodaten werden nicht übermittelt.
+    </p>
+
+    <p>
+      Die Verarbeitung dient der Bereitstellung aktueller Ziehungsdaten.
+      Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse
+      besteht in der Aktualität und Funktionsfähigkeit der App. Kann der Dienst
+      nicht erreicht werden, verwendet die App den bereits lokal vorhandenen
+      Datenbestand.
+    </p>
+
+    <p>
+      WestLotto verarbeitet technische Verbindungsdaten nach eigener
+      Verantwortlichkeit. Informationen zur dortigen Verarbeitung:
+      <a
+        href="https://www.westlotto.de/footer/datenschutz.html"
+        rel="noopener noreferrer"
+      >
+        Datenschutzhinweise von WestLotto
+      </a>.
+    </p>
+
+    <h2>5. Zufallszahlen über RANDOM.ORG</h2>
+
+    <p>
+      Im automatischen Generatormodus kann Lotto Orbit für die Funktion
+      „Echter Zufall“ und für automatisch erzeugte Zusatznummern eine
+      HTTPS-Anfrage an RANDOM.ORG senden. Im manuellen Seed-Modus erfolgt die
+      Erzeugung lokal auf dem Gerät; RANDOM.ORG wird dann nicht benötigt.
+      Ist RANDOM.ORG nicht erreichbar, verwendet die App als technischen
+      Fallback die lokale Android-Zufallsquelle
+      <code>SecureRandom</code>.
+    </p>
+
+    <p>
+      <strong>Empfänger:</strong>
+      Randomness and Integrity Services Limited, Irland<br>
+
+      <strong>Domain:</strong>
+      <code>www.random.org</code><br>
+
+      <strong>Aufgerufene Dienste:</strong>
+      <code>/sequences/</code> und <code>/integers/</code>
+    </p>
+
+    <p>
+      Übermittelt werden die öffentliche IP-Adresse, Datum und Uhrzeit, der
+      User-Agent <code>LottoOrbit/1.0</code> sowie rein technische Parameter
+      wie Zahlenbereich, Anzahl und Ausgabeformat.
+      Es werden keine Favoriten, selbst vergebenen Namen, gespeicherten
+      Zahlenfelder, Einstellungen, Zahlungsdaten oder Nutzerkontodaten
+      übermittelt.
+    </p>
+
+    <p>
+      RANDOM.ORG verwendet IP-Adressen unter anderem für Kontingentsteuerung,
+      Missbrauchsschutz und Protokollierung. Rechtsgrundlage für die durch
+      Lotto Orbit veranlasste Verbindung ist Art. 6 Abs. 1 lit. f DSGVO.
+      Das berechtigte Interesse besteht in der Bereitstellung der ausdrücklich
+      gewählten Online-Zufallsfunktion. Die Funktion ist nicht erforderlich,
+      wenn der manuelle Seed-Modus verwendet wird.
+    </p>
+
+    <p>
+      Informationen zur Verarbeitung durch RANDOM.ORG:
+      <a
+        href="https://www.random.org/terms/2020-08-01/privacy"
+        rel="noopener noreferrer"
+      >
+        Datenschutzerklärung von RANDOM.ORG
+      </a>.
+    </p>
+
+    <h2>6. Zwischenablage</h2>
+
+    <p>
+      Auf ausdrücklichen Befehl des Nutzers kann Lotto Orbit Zahlenfelder oder
+      Seeds in die systemweite Android-Zwischenablage kopieren. Ab diesem
+      Zeitpunkt wird der Inhalt durch das Betriebssystem verwaltet und kann
+      abhängig von Android-Version, Geräteeinstellungen und installierten Apps
+      von anderen Anwendungen verarbeitet werden.
+    </p>
+
+    <p>
+      Lotto Orbit liest die Zwischenablage nicht aus und übermittelt deren
+      Inhalt nicht an den Entwickler.
+    </p>
+
+    <h2>7. Berechtigungen</h2>
+
+    <p>
+      Die App fordert ausschließlich die Android-Berechtigung
+      <code>android.permission.INTERNET</code> an.
+    </p>
+
+    <p>
+      Sie benötigt keine Berechtigungen für Standort, Kontakte, Kamera,
+      Mikrofon, Fotos, Dateien, SMS, Telefon, Kalender oder
+      Benachrichtigungen.
+    </p>
+
+    <h2>8. Empfänger und Weitergabe</h2>
+
+    <p>
+      Personenbezogene Daten werden durch den Entwickler weder verkauft noch
+      zu Werbe-, Analyse- oder Profilingzwecken weitergegeben.
+    </p>
+
+    <p>
+      Technische Verbindungsdaten werden nur im Rahmen der beschriebenen
+      HTTPS-Anfragen an WestLotto und RANDOM.ORG übertragen. Diese Anbieter
+      verarbeiten die bei ihnen anfallenden Daten nach ihren eigenen
+      Datenschutzhinweisen.
+    </p>
+
+    <h2>9. Speicherdauer und Löschung</h2>
+
+    <p>
+      Lokal gespeicherte Favoriten bleiben erhalten, bis sie in der App
+      gelöscht werden.
+    </p>
+
+    <p>
+      Weitere lokale App-Daten bleiben gespeichert, bis sie über die
+      Android-App-Einstellungen gelöscht oder die App deinstalliert wird.
+      Ziehungsdaten können innerhalb der App auf den mitgelieferten lokalen
+      Datenbestand zurückgesetzt werden.
+    </p>
+
+    <p>
+      Der Entwickler speichert keine serverseitigen Kopien dieser lokalen
+      Daten und kann sie deshalb weder einsehen noch zentral löschen.
+      Für die Speicherdauer technischer Protokolldaten bei WestLotto und
+      RANDOM.ORG gelten deren jeweilige Datenschutzhinweise.
+    </p>
+
+    <h2>10. Backups und Gerätewechsel</h2>
+
+    <p>
+      Cloud-Backups sind in der App-Konfiguration deaktiviert. Die lokale
+      Datenbank ist zusätzlich von den konfigurierten Cloud-Backup- und
+      Geräteübertragungsregeln ausgeschlossen.
+    </p>
+
+    <p>
+      Abhängig von Android-Version und Gerätehersteller kann eine direkte
+      Übertragung einzelner App-Daten bei einem Gerätewechsel technisch dennoch
+      nicht in jeder Konstellation vollständig ausgeschlossen werden.
+    </p>
+
+    <h2>11. Datensicherheit</h2>
+
+    <p>
+      Netzwerkverbindungen der App erfolgen über HTTPS. Lokal gespeicherte
+      Daten liegen im von Android geschützten App-Speicher.
+    </p>
+
+    <p>
+      Die App verwendet keine extern nachgeladenen Programmteile und keine
+      Werbe-, Analyse- oder Tracking-SDKs. Ein vollständiger Schutz vor allen
+      Risiken der Datenübertragung und Gerätesicherheit kann technisch jedoch
+      nicht garantiert werden.
+    </p>
+
+    <h2>12. Bereitstellung der Daten</h2>
+
+    <p>
+      Es besteht keine gesetzliche Pflicht zur Bereitstellung
+      personenbezogener Daten.
+    </p>
+
+    <p>
+      Ohne Übertragung technischer Verbindungsdaten können aktuelle
+      Ziehungsdaten und die Online-Zufallsfunktion nicht abgerufen werden.
+      Die App kann mit dem lokal enthaltenen Ziehungsdatenbestand und im
+      manuellen Seed-Modus weiterhin eingeschränkt offline verwendet werden.
+    </p>
+
+    <h2>13. Automatisierte Entscheidungen und Profiling</h2>
+
+    <p>
+      Es findet keine automatisierte Entscheidungsfindung im Sinne von
+      Art. 22 DSGVO und kein Profiling statt.
+    </p>
+
+    <p>
+      Statistische Auswertungen und generierte Zahlen sind keine
+      Gewinnprognosen und verändern keine Gewinnwahrscheinlichkeit.
+    </p>
+
+    <h2>14. Rechte betroffener Personen</h2>
+
+    <p>
+      Betroffene Personen haben im Rahmen der gesetzlichen Voraussetzungen
+      insbesondere folgende Rechte:
+    </p>
+
+    <ul>
+      <li>Auskunft nach Art. 15 DSGVO,</li>
+      <li>Berichtigung nach Art. 16 DSGVO,</li>
+      <li>Löschung nach Art. 17 DSGVO,</li>
+      <li>Einschränkung der Verarbeitung nach Art. 18 DSGVO,</li>
+      <li>Datenübertragbarkeit nach Art. 20 DSGVO,</li>
+      <li>
+        Widerspruch gegen eine Verarbeitung auf Grundlage von Art. 6 Abs. 1
+        lit. f DSGVO nach Art. 21 DSGVO.
+      </li>
+    </ul>
+
+    <p>
+      Datenschutzanfragen können an die in Abschnitt 1 genannte
+      E-Mail-Adresse gerichtet werden.
+    </p>
+
+    <p>
+      Soweit ausschließlich WestLotto, RANDOM.ORG oder GitHub über die
+      betreffenden technischen Protokolldaten verfügen, müssen
+      Betroffenenrechte gegebenenfalls unmittelbar gegenüber dem jeweiligen
+      Anbieter geltend gemacht werden. Der Entwickler unterstützt bei der
+      Zuordnung einer Anfrage, soweit dies möglich ist.
+    </p>
+
+    <h2>15. Beschwerderecht</h2>
+
+    <p>
+      Betroffene Personen haben gemäß Art. 77 DSGVO das Recht, sich bei einer
+      Datenschutzaufsichtsbehörde zu beschweren.
+    </p>
+
+    <p>
+      Für einen in Hessen ansässigen Verantwortlichen ist insbesondere
+      folgende Behörde zuständig:
+    </p>
+
+    <p>
+      Der Hessische Beauftragte für Datenschutz und Informationsfreiheit<br>
+      Wilhelmstraße 7<br>
+      65185 Wiesbaden<br>
+
+      <a
+        href="https://datenschutz.hessen.de/"
+        rel="noopener noreferrer"
+      >
+        datenschutz.hessen.de
+      </a>
+    </p>
+
+    <h2>16. Hosting dieser Datenschutzerklärung über GitHub Pages</h2>
+
+    <p>
+      Diese Datenschutzerklärung wird als statische Webseite über GitHub Pages
+      bereitgestellt.
+    </p>
+
+    <p>
+      Anbieter sind GitHub B.V., Prins Bernhardplein 200, 1097 JB Amsterdam,
+      Niederlande, und gegebenenfalls GitHub, Inc., USA.
+    </p>
+
+    <p>
+      Beim Aufruf einer GitHub-Pages-Seite protokolliert GitHub insbesondere
+      die IP-Adresse des Besuchers zu Sicherheitszwecken. GitHub kann darüber
+      hinaus technische Nutzungsdaten wie Zeitpunkt, aufgerufene Seite,
+      Gerätetyp, Betriebssystem und Referrer verarbeiten.
+    </p>
+
+    <p>
+      Der Betreiber dieser Datenschutzerklärung erhält keinen direkten Zugriff
+      auf die vollständigen IP-Adressen der Besucher.
+    </p>
+
+    <p>
+      Die Nutzung von GitHub Pages beruht auf Art. 6 Abs. 1 lit. f DSGVO.
+      Das berechtigte Interesse besteht in der sicheren, zuverlässigen und
+      öffentlich erreichbaren Bereitstellung der gesetzlich und nach den
+      Google-Play-Richtlinien erforderlichen Datenschutzerklärung.
+    </p>
+
+    <p>
+      GitHub kann Daten auch außerhalb der Europäischen Union verarbeiten.
+      Informationen zu Rechtsgrundlagen, internationalen Übermittlungen,
+      Speicherdauer und Betroffenenrechten enthält die
+      <a
+        href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+        rel="noopener noreferrer"
+      >
+        Datenschutzerklärung von GitHub
+      </a>.
+    </p>
+
+    <p>
+      Diese statische Seite bindet keine eigenen Analysewerkzeuge,
+      Werbenetzwerke, Social-Media-Plugins, Schriftarten von Drittanbietern
+      oder sonstigen externen Inhalte ein.
+    </p>
+
+    <h2>17. Hinweise zur App und zum Glücksspielbezug</h2>
+
+    <p>
+      Lotto Orbit ist keine offizielle App eines Lotterieanbieters, verkauft
+      keine Tippscheine, vermittelt keine Spielteilnahme und nimmt keine
+      Zahlungen entgegen.
+    </p>
+
+    <p>
+      Die App ist nicht an Kinder gerichtet. Glücksspiel kann süchtig machen;
+      die Teilnahme an Lotterien ist in Deutschland grundsätzlich erst ab
+      18 Jahren erlaubt.
+    </p>
+
+    <h2>18. Änderungen dieser Datenschutzerklärung</h2>
+
+    <p>
+      Diese Datenschutzerklärung wird angepasst, wenn sich Funktionen,
+      Datenflüsse, eingesetzte Anbieter oder rechtliche Anforderungen ändern.
+      Maßgeblich ist die jeweils unter dieser Adresse veröffentlichte Fassung.
+    </p>
   </main>
 </body>
 </html>
